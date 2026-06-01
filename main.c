@@ -26,7 +26,7 @@
     #define sleep_seconds(x) sleep(x)
 #endif
 
-#ifdef _WIN32
+#if defined(_WIN32) || defined(_WIN64)
     #include <windows.h>
     #define milliseconds_sleep(ms) Sleep(ms)
 #else
