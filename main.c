@@ -45,7 +45,7 @@ int main() {
 #ifdef _DEBUG
     printf("DEBUG MODE\n");
 #endif
-    char wakeup_time_string[5];
+    char wakeup_time_string[6];
     int wakeup_hour, wakeup_minute;
     printf("Введите время когда будильничку звонить в формате HH-MM\nгде H это часы а M это минуты\n");
     scanf("%5s", wakeup_time_string);
