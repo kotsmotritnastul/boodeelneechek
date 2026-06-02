@@ -27,30 +27,26 @@
 скорее всего потребуется установить библиотеку `sdl2` для убунты и федоры вот тут https://github.com/libsdl-org/SDL/blob/main/docs/README-linux.md есть подробная иструкция, мне было достаточно просто скопировать команды оттуда.
 
 если лень ходить по ссылке то вот команда для убунты
+чтобы пользоваться будильничком
+```
+sudo apt update
+sudo apt install libsdl2-2.0-0 libsdl2-mixer-2.0-0
 
 ```
-sudo apt-get install build-essential git make \
-pkg-config cmake ninja-build gnome-desktop-testing libasound2-dev libpulse-dev \
-libaudio-dev libfribidi-dev libjack-dev libsndio-dev libx11-dev libxext-dev \
-libxrandr-dev libxcursor-dev libxfixes-dev libxi-dev libxss-dev libxtst-dev \
-libxkbcommon-dev libdrm-dev libgbm-dev libgl1-mesa-dev libgles2-mesa-dev \
-libegl1-mesa-dev libdbus-1-dev libibus-1.0-dev libudev-dev libthai-dev libusb-1.0-0-dev \
-libpipewire-0.3-dev libwayland-dev libdecor-0-dev liburing-dev
+чтобы скомпилировать будильничек
+```
+sudo apt update
+sudo apt install libsdl2-dev libsdl2-mixer-dev
 ```
 
 а вот для федоры
-
+чтобы пользоваться будильничком
 ```
-sudo dnf install gcc git-core make cmake \
-alsa-lib-devel fribidi-devel pulseaudio-libs-devel pipewire-devel \
-libX11-devel libXext-devel libXrandr-devel libXcursor-devel libXfixes-devel \
-libXi-devel libXScrnSaver-devel libXtst-devel dbus-devel ibus-devel \
-systemd-devel mesa-libGL-devel libxkbcommon-devel mesa-libGLES-devel \
-mesa-libEGL-devel vulkan-devel wayland-devel wayland-protocols-devel \
-libdrm-devel mesa-libgbm-devel libusb1-devel libdecor-devel \
-pipewire-jack-audio-connection-kit-devel libthai-devel \
-liburing-devel zlib-ng-compat-static sdl2-compat-devel SDL2_mixer-devel
+sudo dnf sudo dnf install SDL2 SDL2_mixer
 ```
-
+чтобы скомпилировать будильничек
+```
+sudo dnf install SDL2-devel SDL2_mixer-devel
+```
 если чего-то не хватает - пишите в issues.
 несмотря на то что я хотел сделать в первую очередь линуксовую утилиту - мне бы хотелось получить обратную связь про то как она запускается под виндой - если вообще запускается. у меня винды нет но если у вас есть - попробуйте, вдруг утилита выйдет действительно кроссплатформенной.
