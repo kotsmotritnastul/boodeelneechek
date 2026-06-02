@@ -30,7 +30,6 @@
     #include <windows.h>
     #define milliseconds_sleep(ms) Sleep(ms)
 #else
-    #include <time.h>
     #include <unistd.h>
 
     void milliseconds_sleep(long milliseconds) {
